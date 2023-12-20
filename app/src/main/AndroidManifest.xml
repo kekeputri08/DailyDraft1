@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.mobile.dailydraft">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logodd"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logodd"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DailyDraft">
+
+        <activity
+            android:name=".FotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TodolistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CatatanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="Home Screen"
+            android:theme="@style/Theme.DailyDraft" />
+        <activity
+            android:name=".InsertActivity"
+            android:label="Home Screen"
+            android:theme="@style/Theme.DailyDraft" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DailyDraft">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DailyDraft" />
+    </application>
+
+</manifest>
